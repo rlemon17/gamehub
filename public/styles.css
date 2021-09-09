@@ -1,0 +1,153 @@
+body {
+    background-color: rgb(44, 44, 44);
+    color: white;
+    font-family: 'Tourney', cursive;
+    text-align: center;
+}
+
+button {
+    margin-top: 2rem;
+}
+
+input {
+    max-width: 10%;
+    min-width: 8rem;
+    margin: auto;
+}
+
+.container p {
+    text-align: left;
+}
+
+/* ==================== Runescape styles ==================== */
+
+#overview-table {
+    max-width: 80%;
+    margin: auto;
+}
+
+#stats-table {
+    max-width: 40%;
+    margin: auto;
+}
+
+#rs-name {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.price {
+    color:rgb(0, 217, 255);
+}
+
+.profit {
+    color:rgb(0, 255, 13);
+}
+
+/* ==================== Pokemon styles ==================== */
+
+#dexEntry {
+    color: rgb(163, 163, 163);
+    padding: 3rem 1rem;
+}
+
+#name {
+    padding: 1rem 0 0;
+}
+
+#sprite {
+    height: 15rem;
+    padding: 0 0 1rem;
+}
+
+#subtitle {
+    text-align: center;
+}
+
+#title {
+    font-family: 'Press Start 2P', cursive;
+    padding: 5rem 0 1rem;
+}
+
+#type {
+    color: rgb(163, 163, 163);
+}
+
+.box {
+    display: inline-block;
+    text-align: left;
+    width: 100px;
+}
+
+.col-2 {
+    text-align: left;
+}
+
+.hp {
+    color: red;
+}
+
+.atk {
+    color: orange;
+}
+
+.def {
+    color: rgb(255, 238, 0);
+}
+
+.spatk {
+    color: rgb(0, 110, 255)
+}
+
+.spdef {
+    color: rgb(0, 160, 0);
+}
+
+.spd {
+    color: rgb(255, 122, 144);
+}
+
+.box.hp {
+    background-color: red;
+    color: white;
+}
+
+.box.atk {
+    background-color: orange;
+    color: white;
+}
+
+.box.def {
+    background-color: rgb(255, 238, 0);
+    color: white;
+}
+
+.box.spatk {
+    background-color: rgb(0, 110, 255);
+    color: white;
+}
+
+.box.spdef {
+    background-color: rgb(0, 160, 0);
+    color: white;
+}
+
+.box.spd {
+    background-color: rgb(255, 122, 144);
+    color: white;
+}
+
+.formButton {
+    background-color: rgb(13, 137, 253);
+    color: white;
+    margin: 1rem 1rem 2rem;
+    max-width: fit-content;
+}
+
+.formForm {
+    display: inline-block;
+}
+
+.under-stats {
+    padding-top: 2.5rem;
+}

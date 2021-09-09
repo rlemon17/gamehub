@@ -1,0 +1,125 @@
+<%- include("header") -%>
+
+<h1 id="title">Runescape Money-Making</h1>
+<p>Money making guides updated live with current Grand Exchange prices to assess viability</p>
+
+<table id="overview-table" class="table table-bordered table-hover table-dark">
+
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">Method</th>
+        <th scope="col">Inputs</th>
+        <th scope="col">Outputs</th>
+        <th scope="col">
+            <img src="https://www.osrsbox.com/osrsbox-db/items-icons/8899.png">
+            GP per Hour
+        </th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Gathering Mort Myre Fungus</td>
+        <td>None</td>
+        <td>
+            <img src="https://secure.runescape.com/m=itemdb_oldschool/1630933304030_obj_sprite.gif?id=2970">x 27 at
+            <span class="price"><%=mortMyreFungus%></span>
+            each
+        </td>
+        <td class="profit"><%=(mortMyreFungus*27*20).toLocaleString("en-US")%></td>
+      </tr>
+
+      <tr>
+        <td>Gathering Goblin Cave Wire</td>
+        <td>None</td>
+        <td>
+            <img src="https://secure.runescape.com/m=itemdb_oldschool/1630933304030_obj_sprite.gif?id=10981">x 28 at
+            <span class="price"><%=goblinWire%></span>
+            each
+        </td>
+        <td class="profit"><%=(goblinWire*360).toLocaleString("en-US")%></td>
+      </tr>
+
+      <tr>
+        <td>Making Mahogany Planks (Sawmill)</td>
+        <td>
+            <img src="https://secure.runescape.com/m=itemdb_oldschool/1630933304030_obj_sprite.gif?id=6332">x 27 at
+            <span class="price"><%=mahogLog%></span>
+            each
+            <br>
+            <img src="https://www.osrsbox.com/osrsbox-db/items-icons/1004.png">x <span class="price">40,500</span>
+            <br>
+            <br>
+            Total: <span class="price"><%=((mahogLog*27)+40500).toLocaleString("en-US")%></span>
+        </td>
+        <td>
+            <img src="https://secure.runescape.com/m=itemdb_oldschool/1630933304030_obj_sprite.gif?id=8782">x 27 at
+            <span class="price"><%=mahogPlank%></span>
+            each
+            <br>
+            <br>
+            <br>
+            Total: <span class="price"><%=(parseInt(mahogPlank.replace(/,/g, ''))*27).toLocaleString("en-US")%></span>
+        </td>
+        <td class="profit"><%=(((parseInt(mahogPlank.replace(/,/g, ''))*27)-((mahogLog*27)+40500))*70).toLocaleString("en-US")%></td>
+      </tr>
+
+      <tr>
+        <td>Making Mahogany Planks (Plank Make)</td>
+        <td>
+            <img src="https://secure.runescape.com/m=itemdb_oldschool/1630933304030_obj_sprite.gif?id=6332">x 1 at
+            <span class="price"><%=mahogLog%></span>
+            each
+            <br>
+            <img src="https://secure.runescape.com/m=itemdb_oldschool/1630933304030_obj_sprite.gif?id=561">x 1 at
+            <span class="price"><%=natureRune%></span>
+            each
+            <br>
+            <img src="https://secure.runescape.com/m=itemdb_oldschool/1630933304030_obj_sprite.gif?id=9075">x 2 at
+            <span class="price"><%=astralRune%></span>
+            each
+            <br>
+            <img src="https://www.osrsbox.com/osrsbox-db/items-icons/1003.png">x <span class="price">1,050</span>
+            <br>
+            <br>
+            Total: <span class="price"><%=(mahogLog+natureRune+(astralRune*2)+1050).toLocaleString("en-US")%></span>
+        </td>
+        <td>
+            <img src="https://secure.runescape.com/m=itemdb_oldschool/1630933304030_obj_sprite.gif?id=8782">x 1 at
+            <span class="price"><%=mahogPlank%></span>
+            each
+        </td>
+        <td class="profit"><%=(((parseInt(mahogPlank.replace(/,/g, '')))-(mahogLog+natureRune+(astralRune*2)+1050))*1000).toLocaleString("en-US")%></td>
+      </tr>
+
+      <tr>
+        <td>Humidifying Soft Clay</td>
+        <td>
+            <img src="https://secure.runescape.com/m=itemdb_oldschool/1630933304030_obj_sprite.gif?id=434">x 27 at
+            <span class="price"><%=clay%></span>
+            each
+            <br>
+            <img src="https://secure.runescape.com/m=itemdb_oldschool/1630933304030_obj_sprite.gif?id=9075">x 1 at
+            <span class="price"><%=astralRune%></span>
+            each
+            <br>
+            <br>
+            Total: <span class="price"><%=((clay*27)+astralRune).toLocaleString("en-US")%></span>
+        </td>
+        <td>
+            <img src="https://secure.runescape.com/m=itemdb_oldschool/1630933304030_obj_sprite.gif?id=1761">x 27 at
+            <span class="price"><%=softClay%></span>
+            each
+            <br>
+            <br>
+            <br>
+            Total: <span class="price"><%=(softClay*27).toLocaleString("en-US")%></span>
+        </td>
+        <td class="profit"><%=(((softClay*27)-((clay*27)+astralRune))*600).toLocaleString("en-US")%></td>
+      </tr>
+
+    </tbody>
+
+  </table>
+
+  <%- include("footer") -%>

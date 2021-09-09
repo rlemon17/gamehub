@@ -1,0 +1,14 @@
+<%- include("header") -%>
+
+<h1 id="title">Lemon's Pokedex</h1>
+<p id="subtitle"><%=title%></p>
+
+<form action="/pokemon" method="post">
+    <div class="form-group">
+        <label>Pokemon Name or Pokedex Number</label>
+        <input type="text" class="form-control" name="pokeName" autocomplete="off" pattern="[a-zA-Z0-9]+"> 
+        <button type="submit" class="btn btn-primary">Search</button>
+    </div> 
+</form>
+
+<%- include("footer") -%>

@@ -1,0 +1,13 @@
+<%- include("header") -%>
+
+<h1 id="title">Runescape Account Lookup</h1>
+
+<form action="/runescape-scores" method="post">
+    <div class="form-group">
+        <label><%=title%></label>
+        <input type="text" class="form-control" name="rsName" autocomplete="off" pattern="[a-zA-Z0-9]+"> 
+        <button type="submit" class="btn btn-primary">Search</button>
+    </div> 
+</form>
+
+<%- include("footer") -%>

@@ -1,0 +1,319 @@
+<%- include("header") -%>
+
+<h1 id="title">Runescape Account Lookup</h1>
+
+<form action="/runescape-scores" method="post">
+    <div class="form-group">
+        <label>Enter another Runescape Username here:</label>
+        <input type="text" class="form-control" name="rsName" autocomplete="off" pattern="[a-zA-Z0-9]+"> 
+        <button type="submit" class="btn btn-primary">Search</button>
+    </div> 
+</form>
+
+<h1 id="rs-name"><%=name%></h1>
+
+<table id="stats-table" class="table table-bordered table-hover table-dark">
+
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">Skill</th>
+        <th scope="col">Level</th>
+        <th scope="col">Rank</th>
+      </tr>
+    </thead>
+
+    <tbody>
+        
+        <tr>
+            <td>
+                <img src="https://oldschool.runescape.wiki/images/a/a3/Skills_icon.png?a8e9f">
+            </td>
+            <td>
+                <%=totalLvl%>
+            </td>
+            <td>
+                <%=totalRank%>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <img src="https://oldschool.runescape.wiki/images/9/96/Hitpoints_icon.png?a4819">
+            </td>
+            <td>
+                <%=hpLvl%>
+            </td>
+            <td>
+                <%=hpRank%>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <img src="https://oldschool.runescape.wiki/images/f/fe/Attack_icon.png?b4bce">
+            </td>
+            <td>
+                <%=atkLvl%>
+            </td>
+            <td>
+                <%=atkRank%>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <img src="https://oldschool.runescape.wiki/images/1/1b/Strength_icon.png?e6e0c">
+            </td>
+            <td>
+                <%=strLvl%>
+            </td>
+            <td>
+                <%=strRank%>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <img src="https://oldschool.runescape.wiki/images/b/b7/Defence_icon.png?ca0cd">
+            </td>
+            <td>
+                <%=defLvl%>
+            </td>
+            <td>
+                <%=defRank%>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <img src="https://oldschool.runescape.wiki/images/1/19/Ranged_icon.png?01b0e">
+            </td>
+            <td>
+                <%=rangeLvl%>
+            </td>
+            <td>
+                <%=rangeRank%>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <img src="https://oldschool.runescape.wiki/images/5/5c/Magic_icon.png?334cf">
+            </td>
+            <td>
+                <%=mageLvl%>
+            </td>
+            <td>
+                <%=mageRank%>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <img src="https://oldschool.runescape.wiki/images/f/f2/Prayer_icon.png?ca0dc">
+            </td>
+            <td>
+                <%=prayLvl%>
+            </td>
+            <td>
+                <%=prayRank%>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <img src="https://oldschool.runescape.wiki/images/d/dc/Cooking_icon.png?a0156">
+            </td>
+            <td>
+                <%=cookLvl%>
+            </td>
+            <td>
+                <%=cookRank%>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <img src="https://oldschool.runescape.wiki/images/f/f4/Woodcutting_icon.png?6ead4">
+            </td>
+            <td>
+                <%=wcLvl%>
+            </td>
+            <td>
+                <%=wcRank%>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <img src="https://oldschool.runescape.wiki/images/9/93/Fletching_icon.png?15cda">
+            </td>
+            <td>
+                <%=fletchLvl%>
+            </td>
+            <td>
+                <%=fletchRank%>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <img src="https://oldschool.runescape.wiki/images/3/3b/Fishing_icon.png?15a98">
+            </td>
+            <td>
+                <%=fishLvl%>
+            </td>
+            <td>
+                <%=fishRank%>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <img src="https://oldschool.runescape.wiki/images/9/9b/Firemaking_icon.png?45ea0">
+            </td>
+            <td>
+                <%=fireLvl%>
+            </td>
+            <td>
+                <%=fireRank%>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <img src="https://oldschool.runescape.wiki/images/c/cf/Crafting_icon.png?a1f71">
+            </td>
+            <td>
+                <%=craftLvl%>
+            </td>
+            <td>
+                <%=craftRank%>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <img src="https://oldschool.runescape.wiki/images/d/dd/Smithing_icon.png?d26c5">
+            </td>
+            <td>
+                <%=smithLvl%>
+            </td>
+            <td>
+                <%=smithRank%>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <img src="https://oldschool.runescape.wiki/images/4/4a/Mining_icon.png?00870">
+            </td>
+            <td>
+                <%=mineLvl%>
+            </td>
+            <td>
+                <%=mineRank%>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <img src="https://oldschool.runescape.wiki/images/0/03/Herblore_icon.png?ffa9e">
+            </td>
+            <td>
+                <%=herbLvl%>
+            </td>
+            <td>
+                <%=herbRank%>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <img src="https://oldschool.runescape.wiki/images/8/86/Agility_icon.png?389e0">
+            </td>
+            <td>
+                <%=agilLvl%>
+            </td>
+            <td>
+                <%=agilRank%>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <img src="https://oldschool.runescape.wiki/images/4/4a/Thieving_icon.png?973fe">
+            </td>
+            <td>
+                <%=thieveLvl%>
+            </td>
+            <td>
+                <%=thieveRank%>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <img src="https://oldschool.runescape.wiki/images/2/28/Slayer_icon.png?cd34f">
+            </td>
+            <td>
+                <%=slayLvl%>
+            </td>
+            <td>
+                <%=slayRank%>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <img src="https://oldschool.runescape.wiki/images/f/fc/Farming_icon.png?558fa">
+            </td>
+            <td>
+                <%=farmLvl%>
+            </td>
+            <td>
+                <%=farmRank%>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <img src="https://oldschool.runescape.wiki/images/6/63/Runecraft_icon.png?c278c">
+            </td>
+            <td>
+                <%=rcLvl%>
+            </td>
+            <td>
+                <%=rcRank%>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <img src="https://oldschool.runescape.wiki/images/d/dd/Hunter_icon.png?8762f">
+            </td>
+            <td>
+                <%=huntLvl%>
+            </td>
+            <td>
+                <%=huntRank%>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <img src="https://oldschool.runescape.wiki/images/f/f6/Construction_icon.png?f9bf7">
+            </td>
+            <td>
+                <%=conLvl%>
+            </td>
+            <td>
+                <%=conRank%>
+            </td>
+        </tr>
+        
+    </tbody>
+
+</table>
+
+<%- include("footer") -%>
