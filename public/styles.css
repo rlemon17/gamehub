@@ -18,6 +18,50 @@ input {
 .container p {
     text-align: left;
 }
+/* ==================== Valorant styles ==================== */
+#answer {
+    padding: 0.5rem;
+    color: #2bff00;
+}
+
+.btn-secondary {
+    margin: 0.5rem;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.quiz-input {
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.quiz-select {
+    border-radius: 30px;
+}
+
+.quiz-select:hover {
+    filter: brightness(50%);
+}
+
+.quiz-img-div {
+    padding-top: 2rem;
+}
+
+.quiz-img {
+    min-width: 400px;
+    min-height: 250px;
+    max-width: 400px;
+    max-height: 250px;
+    border-radius: 30px;
+}
+
+/* ==================== Mario Kart styles ==================== */
+
+#mk-img {
+    min-width: 20%;
+}
 
 /* ==================== Runescape styles ==================== */
 

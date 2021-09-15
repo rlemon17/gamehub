@@ -1,0 +1,37 @@
+<%- include("header") -%>
+
+<h1 id="title"><%=map%> Callout Quiz</h1>
+
+<%var choice = Math.floor(Math.random()*calloutArray.length)%>
+
+<div class="quiz-img-div">
+    <%calloutArray[choice].pics.map(picUrl => { %>
+        <img class="quiz-img" src=<%=picUrl%>>
+    <%})%>
+</div>
+
+<br>
+
+<h1 id="answer" class="hidden"><%=calloutArray[choice].name%></h1>
+
+<input class="form-control quiz-input" type="text">
+
+<button class="btn btn-secondary" onclick="showAnswer()">Show Answer</button>
+
+<br>
+
+<button class="btn btn-secondary" onclick="window.location.reload()">Next</button>
+
+<br>
+
+<a href="/val-quiz">
+    <button class="btn btn-dark">Quit</button>
+</a>
+
+<script>
+    const showAnswer = () => {
+        document.getElementById("answer").classList.remove("hidden");
+    }
+</script>
+
+<%- include("footer") -%>
