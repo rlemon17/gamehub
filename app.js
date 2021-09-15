@@ -1330,10 +1330,17 @@ const quizzes = [
                 ]
             },
             {
-                name: "B Hall/Snowpile",
+                name: "Snowpile/B Hall (Outside)",
                 pics: [
                     valUrl+"224.png",
                     valUrl+"124.png"
+                ]
+            },
+            {
+                name: "Kitchen/B Hall (Inside)",
+                pics: [
+                    valUrl+"315.png",
+                    valUrl+"316.png"
                 ]
             },
             {
@@ -1420,7 +1427,9 @@ const quizzes = [
             {
                 name: "A Belt",
                 pics: [
-                    valUrl+"103.png"
+                    valUrl+"103.png",
+                    valUrl+"314.png",
+                    valUrl+"317.png"
                 ]
             }
         ]
