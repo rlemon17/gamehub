@@ -445,32 +445,32 @@ app.post("/mario-kart", (req, res) => {
 
 const maps = [
     {
-        title: "https://scontent-sjc3-1.xx.fbcdn.net/v/t1.15752-9/240974922_646478159668602_5519304623256507388_n.png?_nc_cat=111&ccb=1-5&_nc_sid=ae9488&_nc_ohc=Smoe0DHkHCIAX_iHXO8&_nc_ht=scontent-sjc3-1.xx&oh=836ae0a384b0daaa48807883cde97f74&oe=61644D0F",
-        map: "https://scontent-sjc3-1.xx.fbcdn.net/v/t1.15752-9/240897782_551581222745425_6510135751061367482_n.png?_nc_cat=102&ccb=1-5&_nc_sid=ae9488&_nc_ohc=Z28Rg9yMqScAX_7rsQU&_nc_ht=scontent-sjc3-1.xx&oh=76ef24656ee812763ceee3851534db7f&oe=61661349"
+        title: "https://raw.githubusercontent.com/rlemon17/gamehub/main/public/photos/ascent.png",
+        map: "https://raw.githubusercontent.com/rlemon17/gamehub/main/public/photos/ascentA.png"
     },
     {
-        title: "https://scontent-sjc3-1.xx.fbcdn.net/v/t1.15752-9/241405364_367130481728911_2644136923552139673_n.png?_nc_cat=102&ccb=1-5&_nc_sid=ae9488&_nc_ohc=V7DCcg4mqNsAX_6V2vt&_nc_ht=scontent-sjc3-1.xx&oh=449b5e726702763fb880b2d2e096494e&oe=6164FD60",
-        map: "https://scontent-sjc3-1.xx.fbcdn.net/v/t1.15752-9/241317237_558330448750739_8994773344636244171_n.png?_nc_cat=109&ccb=1-5&_nc_sid=ae9488&_nc_ohc=NGDyyMZwNvAAX9NM4aO&_nc_oc=AQltR2g2ymRwH-9LH-3ZgejSMgYlcHoCcMhOTfmu_AzQcXT6wc6io6Diub_7d-tK5mjXkf5YeGUS9Nr4HyGqCjqA&_nc_ht=scontent-sjc3-1.xx&oh=ac6ff06812a567d8e7a5937f4c566306&oe=6163B6F0"
+        title: "https://raw.githubusercontent.com/rlemon17/gamehub/main/public/photos/bind.png",
+        map: "https://raw.githubusercontent.com/rlemon17/gamehub/main/public/photos/bindA.png"
     },
     {
-        title: "https://scontent-sjc3-1.xx.fbcdn.net/v/t1.15752-9/241288460_1045654929571801_5136712104603798634_n.png?_nc_cat=101&ccb=1-5&_nc_sid=ae9488&_nc_ohc=W_kBl2DPT7oAX80_1Im&_nc_ht=scontent-sjc3-1.xx&oh=d2da12199922ac6b98a0c24a94c17562&oe=61666F8A",
-        map: "https://scontent-sjc3-1.xx.fbcdn.net/v/t1.15752-9/241547521_390498095982980_4767517680915742764_n.png?_nc_cat=106&ccb=1-5&_nc_sid=ae9488&_nc_ohc=_d2rPeVD67cAX912ULC&_nc_ht=scontent-sjc3-1.xx&oh=a1b633bd1d6c5ba50ee98812be091941&oe=6165DC6D"
+        title: "https://raw.githubusercontent.com/rlemon17/gamehub/main/public/photos/breeze.png",
+        map: "https://raw.githubusercontent.com/rlemon17/gamehub/main/public/photos/breezeA.png"
     },
     {
-        title: "https://scontent-sjc3-1.xx.fbcdn.net/v/t1.15752-9/241179371_262912935549749_3968757679874501491_n.png?_nc_cat=111&ccb=1-5&_nc_sid=ae9488&_nc_ohc=JjBpKY3qNGgAX_YlBhR&_nc_ht=scontent-sjc3-1.xx&oh=c2f2547981b773f38e2df87fac22f505&oe=61660EA9",
-        map: "https://scontent-sjc3-1.xx.fbcdn.net/v/t1.15752-9/241419941_349972050191445_6800031572249901306_n.png?_nc_cat=100&ccb=1-5&_nc_sid=ae9488&_nc_ohc=FDGVP5b_z50AX8ibxVb&_nc_ht=scontent-sjc3-1.xx&oh=a86b0dd094166f8e58c0f66aec05fb02&oe=6165BB7A"
+        title: "https://raw.githubusercontent.com/rlemon17/gamehub/main/public/photos/fracture.png",
+        map: "https://raw.githubusercontent.com/rlemon17/gamehub/main/public/photos/fractureA.png"
     },
     {
-        title: "https://scontent-sjc3-1.xx.fbcdn.net/v/t1.15752-9/241151308_276452787404557_1236851042004207982_n.png?_nc_cat=107&ccb=1-5&_nc_sid=ae9488&_nc_ohc=l2ZmQTVIJQsAX_XHFfQ&tn=V5Sr-9QZ2S1mTwSw&_nc_ht=scontent-sjc3-1.xx&oh=7105b99889d8aea85c442827bf5605ce&oe=6164B427",
-        map: "https://scontent-sjc3-1.xx.fbcdn.net/v/t1.15752-9/241294752_553859629154406_2402884195926767177_n.png?_nc_cat=101&ccb=1-5&_nc_sid=ae9488&_nc_ohc=MOTzZeZ6TpMAX-zYLRt&_nc_ht=scontent-sjc3-1.xx&oh=c16182cf21f4c9b80bb83fb467682ddd&oe=6163F325"
+        title: "https://raw.githubusercontent.com/rlemon17/gamehub/main/public/photos/haven.png",
+        map: "https://raw.githubusercontent.com/rlemon17/gamehub/main/public/photos/havenA.png"
     },
     {
-        title: "https://scontent-sjc3-1.xx.fbcdn.net/v/t1.15752-9/241071550_3044051275874133_1327682768696367343_n.png?_nc_cat=106&ccb=1-5&_nc_sid=ae9488&_nc_ohc=r2qM-Av9BTwAX_lo1VF&tn=V5Sr-9QZ2S1mTwSw&_nc_ht=scontent-sjc3-1.xx&oh=c0bb984e41d9ab0c8846b61e7345ff15&oe=616365A3",
-        map: "https://scontent-sjc3-1.xx.fbcdn.net/v/t1.15752-9/241489984_152460493721279_324670807326885147_n.png?_nc_cat=100&ccb=1-5&_nc_sid=ae9488&_nc_ohc=OhZXdyOcaxMAX94_KcL&_nc_ht=scontent-sjc3-1.xx&oh=07d8489367995f9da0f6910adf0415ef&oe=61635629"
+        title: "https://raw.githubusercontent.com/rlemon17/gamehub/main/public/photos/ucebox.png",
+        map: "https://raw.githubusercontent.com/rlemon17/gamehub/main/public/photos/iceboxA.png"
     },
     {
-        title: "https://scontent-sjc3-1.xx.fbcdn.net/v/t1.15752-9/240916001_569322444260527_8306931118365165491_n.png?_nc_cat=101&ccb=1-5&_nc_sid=ae9488&_nc_ohc=qYrsPV-cZvAAX_FfH_o&_nc_ht=scontent-sjc3-1.xx&oh=3409f43f06976f3f7af5818f4056284d&oe=61646640",
-        map: "https://scontent-sjc3-1.xx.fbcdn.net/v/t1.15752-9/240958018_327404212475485_6210405802934177371_n.png?_nc_cat=103&ccb=1-5&_nc_sid=ae9488&_nc_ohc=9DE90DVYs70AX_zHc_9&_nc_ht=scontent-sjc3-1.xx&oh=d166a3a4fbfeed5be8c64fd62009e270&oe=6164A877"
+        title: "https://raw.githubusercontent.com/rlemon17/gamehub/main/public/photos/split.png",
+        map: "https://raw.githubusercontent.com/rlemon17/gamehub/main/public/photos/splitA.png"
     }
 ]
 
