@@ -376,7 +376,7 @@ app.get("/runescape-money", (req, res) => {
 
 // ========================== Mario Kart ==========================
 
-mkCourses = [
+const mkCourses = [
     "https://mario.wiki.gallery/images/0/09/MK8_Mario_Kart_Stadium_Course_Icon.png",
     "https://mario.wiki.gallery/images/4/40/MK8_Water_Park_Course_Icon.png",
     "https://mario.wiki.gallery/images/a/ad/MK8_Sweet_Sweet_Canyon_Course_Icon.png",
@@ -424,18 +424,27 @@ mkCourses = [
     "https://mario.wiki.gallery/images/8/89/MK8_DLC_3DS_Neo_Bowser_City_Course_Icon.png",
     "https://mario.wiki.gallery/images/b/ba/MK8_DLC_GBA_Ribbon_Road_Course_Icon.png",
     "https://mario.wiki.gallery/images/8/8d/MK8_DLC_Super_Bell_Subway_Course_Icon.png",
-    "https://mario.wiki.gallery/images/a/ab/MK8_DLC_Big_Blue_Course_Icon.png"
+    "https://mario.wiki.gallery/images/a/ab/MK8_DLC_Big_Blue_Course_Icon.png",
+    "https://mario.wiki.gallery/images/b/bb/MK8D_Tour_Paris_Promenade_Course_Icon.png",
+    "https://mario.wiki.gallery/images/3/3b/MK8D_3DS_Toad_Circuit_Course_Icon.png",
+    "https://mario.wiki.gallery/images/7/74/MK8D_N64_Choco_Mountain_Course_Icon.png",
+    "https://mario.wiki.gallery/images/9/98/MK8D_Wii_Coconut_Mall_Course_Icon.png",
+    "https://mario.wiki.gallery/images/8/81/MK8D_Tour_Tokyo_Blur_Course_Icon.png",
+    "https://mario.wiki.gallery/images/7/7e/MK8D_DS_Shroom_Ridge_Course_Icon.png",
+    "https://mario.wiki.gallery/images/0/09/MK8D_GBA_Sky_Garden_Course_Icon.png",
+    "https://mario.wiki.gallery/images/0/09/MK8D_Tour_Ninja_Hideaway_Course_Icon.png",
 ];
 
+// TODO: Make the DLC Courses toggleable
 app.get("/mario-kart", (req, res) => {
-    const num = Math.floor(Math.random()*48)
+    const num = Math.floor(Math.random()*(mkCourses.length));
     res.render("mariokart", {
         imgUrl: mkCourses[num]
     });
 })
 
 app.post("/mario-kart", (req, res) => {
-    const num = Math.floor(Math.random()*48)
+    const num = Math.floor(Math.random()*(mkCourses.length));
     res.render("mariokart", {
         imgUrl: mkCourses[num]
     });
